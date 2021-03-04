@@ -76,13 +76,13 @@ namespace UsingTaskRun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(368, 89);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRun);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Task.Run Example";
             this.ResumeLayout(false);
 
         }

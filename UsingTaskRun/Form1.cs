@@ -53,7 +53,10 @@ namespace UsingTaskRun
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            _cts.Dispose();
+            if (_cts != null)
+            {
+                _cts.Dispose();
+            }
             Application.Exit();
         }
     }
