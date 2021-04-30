@@ -34,6 +34,7 @@ namespace UsingTaskRun
             this.btnExit = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnNextRun = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@ namespace UsingTaskRun
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(116, 15);
+            this.btnCancel.Location = new System.Drawing.Point(189, 15);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 1;
@@ -84,11 +85,22 @@ namespace UsingTaskRun
             this.dataGridView1.Size = new System.Drawing.Size(319, 365);
             this.dataGridView1.TabIndex = 4;
             // 
+            // btnNextRun
+            // 
+            this.btnNextRun.Location = new System.Drawing.Point(108, 15);
+            this.btnNextRun.Name = "btnNextRun";
+            this.btnNextRun.Size = new System.Drawing.Size(75, 23);
+            this.btnNextRun.TabIndex = 5;
+            this.btnNextRun.Text = "Next Run";
+            this.btnNextRun.UseVisualStyleBackColor = true;
+            this.btnNextRun.Click += new System.EventHandler(this.btnNextRun_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 473);
+            this.Controls.Add(this.btnNextRun);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnExit);
@@ -108,6 +120,7 @@ namespace UsingTaskRun
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnNextRun;
     }
 }
 
